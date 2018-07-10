@@ -1,0 +1,43 @@
+*
+  margin: 0
+  padding: 0
+  text-align: center
+
+body
+  font-family: Avenir, Helvetica, sans-serif
+
+  > .ember-view
+    width: 100vw
+    height: 100vh
+    display: flex
+    align-items: center
+    flex-direction: column
+    justify-content: center
+
+.banner
+  right: 0
+  bottom: 0
+  left: 0
+  z-index: -1
+  position: fixed
+  height: 50%
+  background: hsl(192, 100%, 55%)
+
+#logo
+  width: 50%
+
+  @media (max-width: 768px)
+    width: 75%
+
+  @media (max-width: 375px)
+    width: 100%
+
+  img
+    margin: -15%
+    width: 100%
+
+h2
+  right: 0
+  bottom: 20px
+  left: 0
+  position: absolute
